@@ -1,0 +1,9 @@
+a {
+  transition: .3s;
+  &:hover {
+    opacity: .75;
+  }
+  &:focus {
+    opacity: .75;
+  }
+}

@@ -1,0 +1,31 @@
+.bl-card {
+  transition: .2s;
+}
+.bl-card:hover {
+  opacity: .8;
+}
+.bl-card:focus {
+  opacity: .8;
+}
+.bl-card_imgWrapper {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc((209/331) * 100%);
+  margin-bottom: 2.5rem;
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+}
+.bl-card_ttl {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+  margin-bottom: 2rem;
+}
+.bl-card_txt {
+  font-weight: 500;
+  line-height: 3.2rem;
+}

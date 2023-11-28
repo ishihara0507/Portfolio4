@@ -1,0 +1,96 @@
+.ly-header {
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+.ly-header_inner {
+  padding: 0 2rem;
+}
+
+.ly-secExp {
+  position: relative;
+  background-image: url(../source/bg.jpg);
+  background-image: image-set(url(../source/bg.jpg) 1x, url(../source/bg2x.jpg) 2x);
+  background-image: -webkit-image-set(url(../source/bg.jpg) 1x, url(../source/bg2x.jpg) 2x);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 68.1rem;
+}
+.ly-secMedia {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 10.6rem 0 7.8rem;
+}
+.ly-secCard {
+  background-image: url(../source/bg02.jpg);
+  background-image: image-set(url(../source/bg02.jpg) 1x, url(../source/bg022x.jpg) 2x);
+  background-image: -webkit-image-set(url(../source/bg02.jpg) 1x, url(../source/bg022x.jpg) 2x);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 12rem 0 14.4rem;
+  .bl-cardUnit {
+    max-width: 122rem;
+    padding: 0 5%;
+    margin: 0 auto;
+  }
+}
+.ly-secNotice {
+  padding: 12rem 5% 6rem;
+  background-color: rgba(255, 255, 255, 1);
+  .bl-miniCardUnit {
+    max-width: 122rem;
+    margin: 0 auto
+  }
+}
+.ly-secAccess {
+  padding: 12rem 3rem 11rem;
+  background-image: url(../source/bg.jpg);
+  background-image: image-set(url(../source/bg.jpg) 1x, url(../source/bg2x.jpg) 2x);
+  background-image: -webkit-image-set(url(../source/bg.jpg) 1x, url(../source/bg2x.jpg) 2x);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ly-secFoot {
+  padding: 6.4rem 0 6.1rem;
+  background-image: url(../source/bg3.jpg);
+  background-image: image-set(url(../source/bg3.jpg) 1x, url(../source/bg32x.jpg) 2x);
+  background-image: -webkit-image-set(url(../source/bg3.jpg) 1x, url(../source/bg32x.jpg) 2x);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ly-footer {
+  padding: 2.3rem 2rem 2.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 768px) {
+  .ly-header {
+    padding: 0;
+  }
+  .ly-header_inner {
+    padding-right: 0;
+  }
+  .ly-secMedia {
+    padding-top: 6rem;
+  }
+  .ly-secCard {
+    padding-bottom: 7rem;
+  }
+  .ly-secExp {
+    height: clamp(68.1rem, calc(68.1rem + (780 - 681) * (100vw - 669px) / (769 - 669)), 78rem);
+  }
+  .ly-secAccess {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .ly-footer {
+    padding: 1.6rem 2rem 1.8rem;
+  }
+}

@@ -1,0 +1,726 @@
+<!-- MIT License
+
+Copyright (c) 2019 Nicolas Cusan
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. -->
+<!-- The MIT License (MIT)
+
+Copyright (c) 2015 Michał Sajnóg
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. -->
+<!-- The MIT License (MIT)
+
+Copyright (c) 2017 Gregory Petrosyan
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. -->
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。 伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+  <title>石井花壇 | 温海温泉旅館【公式サイト】</title>
+  <link rel="stylesheet" href="destyle.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="source/favicon.ico">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <!-- パンくずリスト -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "石井花壇",
+          "item": "https://fumi-taka.conohawing.com/tyukyuEX/"
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+  <header class="bl-header ly-header js-topHeader">
+    <div class="bl-header_inner ly-header_inner">
+      <a href="#" class="bl-header_imgWrapper">
+        <img src="source/top-header-logo.png" alt="ロゴ画像">
+      </a>
+      <a href="#" class="bl-header_imgWrapperSub">
+        <img src="source/sub-header-logo.png" alt="ロゴ画像">
+      </a>
+      <!-- /.bl-header_imgWrapper -->
+      <nav>
+        <ul class="bl-header_menu">
+          <li><a href="oheya.html">お部屋</a></li>
+          <li><a href="oryouri.html">お料理</a></li>
+          <li><a href="onnsenn.html">温泉</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="bl-header_btn el-beforeIcon el-beforeIcon__calendar">
+        宿泊予約
+      </a>
+      <a href="#" class="bl-header_spBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <p>
+          メニュー
+        </p>
+      </a>
+      <ul class="bl-header_spMenu">
+        <li>
+          <a href="index.html">
+            TOP
+          </a>
+        </li>
+        <li>
+          <a href="oheya.html">
+            お部屋
+          </a>
+        </li>
+        <li>
+          <a href="oryouri.html">
+            お料理
+          </a>
+        </li>
+        <li>
+          <a href="onnsenn.html">
+            温泉
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.ly-header_inner -->
+  </header>
+
+  <div class="bl-modal">
+    <div class="bl-modal_inner">
+      <p class="bl-modal_ttl">
+        宿泊予約
+      </p>
+      <a href="#" class="bl-modal_closeBtn">
+        <img src="source/close.png" alt="閉じる">
+      </a>
+      <form action="" class="bl-modal_form">
+        <label>
+        <p class="bl-modal_form_ttl">
+          お名前
+        </p>
+        <input type="text" name="name" placeholder="例：石井正悟" required class="bl-modal_input">
+        </label>
+        <label>
+        <p class="bl-modal_form_ttl">
+          メールアドレス
+        </p>
+        <input type="email" name="email" placeholder="例：Example@example.com" required class="bl-modal_input">
+        </label>
+        <label>
+        <p class="bl-modal_form_ttl">
+          ご希望プラン（空いているプランのみ表示されます）
+        </p>
+        <select required class="bl-modal_input">
+          <option value="" hidden>プランを選択してください</option>
+          <option value="plan01">
+            ①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+          </option>
+          <option value="plan02">
+            ②平日に優雅に楽しむ、特別宿泊プラン
+          </option>
+          <option value="plan03">
+            ③絶景貸切露天と個室会席を満喫できるファミリープラン
+          </option>
+        </select>
+        </label>
+        <label for="js-datepicker">
+        <p class="bl-modal_form_ttl">
+          日時選択
+        </p>
+        </label>
+        <input type="input" name="date" id="js-datepicker" placeholder="日時を選択してください" required class="bl-modal_input">
+        <button type="submit" class="bl-modal_form_sendBtn el-btn">
+          <span>送信する</span>
+        </button>
+      </form>
+    </div>
+    <!-- /.bl-modai_inner -->
+  </div>
+  <!-- /.bl-modal -->
+
+  <main>
+    <div class="un-fv">
+      <div class="un-fv_slide"></div>
+      <div class="un-fv_slide"></div>
+      <div class="un-fv_slide"></div>
+
+      <div class="un-fv_ttlWrapper">
+        <h2 class="un-fv_ttl">
+          頑張る人の
+        </h2>
+        <h2 class="un-fv_ttl">
+          頑張らない時間
+        </h2>
+      </div>
+      <!-- /.un-fv_ttlWrapper -->
+    </div>
+    <!-- /.un-fv -->
+
+    <section class="ly-secExp">
+      <div class="un-explanation">
+        <h3 class="un-explanation_ttl">
+            <span>温海温泉の</span><br class="hp-none420px">美しさに癒やされて
+        </h3>
+        <!-- /.un-explanation_ttl -->
+        <p class="un-explanation_txt">
+            東北の奥座敷である温海温泉郷<br class="hp-none420px">開湯は約<span>1300</span>年前とされ、役小角が<br class="hp-none420px">発見したと伝えられます
+          </p>
+        </p>
+        <!-- /.un-explanation_txt -->
+        <p class="un-explanation_txt">
+            石井花壇は江戸より続く由緒ある旅館で<br class="hp-none420px">クラシックな作りの中に大正ロマンあふれる<br class="hp-none420px">内装を残しております
+        </p>
+        <!-- /.un-explanation_txt -->
+        <p class="un-explanation_txt">
+            圧倒的癒やしの空間で<br class="hp-none420px">頑張る現代人に<br class="hp-none420px">頑張らない圧倒的な非日常をご提供します
+        </p>
+        <!-- /.un-explanation_txt -->
+        <p class="un-explanation_name">
+          石井花壇
+        </p>
+      </div>
+      <!-- /.un-explanation -->
+    </section>
+
+    <section class="ly-secMedia">
+      <div class="bl-media hp-mb12_2rem">
+        <figure class="bl-media_imgWrapper" data-aos="fade-up">
+          <picture>
+            <source type="image/webp" srcset="source/oheya-top.webp 1x, source/oheya-top2x.webp 2x">
+            <img srcset="source/oheya-top.jpg 1x, source/oheya-top.jpg 2x" alt="お部屋">
+          </picture>
+        </figure>
+        <div class="bl-media_body" data-aos="fade-up">
+          <h3 class="bl-media_ttl">
+            喧騒から離れた空間<br>
+            心落ち着く至極のひととき
+          </h3>
+          <p class="bl-media_txt">
+            まるで時が止まったかのような、圧倒的な静寂のなかで、<br>
+            ひたすらにゆったりと…。<br>
+            最高級の「何もしない時間」をお過ごしください。
+          </p>
+          <a href="oheya.html" class="el-btn">
+            <span>お部屋について</span> 
+          </a>
+        </div>
+        <!-- /.bl-media_body -->
+      </div>
+      <!-- /.bl-media -->
+      <div class="bl-media bl-media__reverse hp-mb12_2rem">
+        <figure class="bl-media_imgWrapper" data-aos="fade-up">
+          <picture>
+            <source type="image/webp" srcset="source/menu-top.webp 1x, source/menu-top2x.webp 2x">
+            <img srcset="source/menu-top.jpg 1x, source/menu-top.jpg 2x" alt="お料理">
+          </picture>
+        </figure>
+        <div class="bl-media_body" data-aos="fade-up">
+          <h3 class="bl-media_ttl">
+            出迎えるのは<br>
+            極上の温海料理
+          </h3>
+          <p class="bl-media_txt">
+            最も旬の食材を愉しむ、最高の贅沢を<br>
+            最高級A5ランクの米沢牛と共に頂く。<br>
+            あなたの人生史に残る「極上の感動」を<br>
+            お約束します。
+          </p>
+          <a href="oryouri.html" class="el-btn">
+            <span>料理について</span>
+          </a>
+        </div>
+        <!-- /.bl-media_body -->
+      </div>
+      <!-- /.bl-media -->
+      <div class="bl-media">
+        <figure class="bl-media_imgWrapper" data-aos="fade-up">
+          <picture>
+            <source type="image/webp" srcset="source/onsen-top.webp 1x, source/onsen-top2x.webp 2x">
+            <img srcset="source/onsen-top.jpg 1x, source/onsen-top2x.jpg 2x" alt="温泉">
+          </picture>
+        </figure>
+        <div class="bl-media_body" data-aos="fade-up">
+          <h3 class="bl-media_ttl">
+            疲れ切った身体にやすらぎを<br>
+            温海の源泉に癒やされて
+          </h3>
+          <p class="bl-media_txt">
+            古くは弘法大師の病をも治療したと言われる温海の泉質。<br>
+            現代人の疲弊しきった身体を修復する最高級の湯治場として<br>
+            ご活用ください。
+          </p>
+          <a href="onnsenn.html" class="el-btn">
+            <span>温泉について</span>
+          </a>
+        </div>
+        <!-- /.bl-media_body -->
+      </div>
+      <!-- /.bl-media -->
+    </section>
+
+    <section class="ly-secCard">
+      <h2 class="el-lv2heading el-beforeIcon el-beforeIcon__logo hp-mb6_6rem">
+        おすすめご宿泊プラン
+      </h2>
+
+      <div class="bl-cardUnit bl-cardUnit__col3" data-aos="fade-up">
+        <a href="#" class="bl-card">
+          <figure class="bl-card_imgWrapper">
+            <picture>
+              <source type="image/webp" srcset="source/recommended01.webp 1x, source/recommended012x.webp 2x">
+              <img srcset="source/recommended01.jpg 1x, source/recommended012x.jpg 2x" alt="おすすめ１">
+            </picture>
+          </figure>
+          <div class="bl-card_body">
+            <p class="bl-card_ttl">
+              朝食付きプラン、日本近海で取れたのどぐろを朝食として…
+            </p>
+            <p class="bl-card_txt">
+              最高級と称されるのどぐろ、正式には「アカムツ」と呼ばれる魚、味は独特の上品な味わいで、焼いても煮ても美味
+            </p>
+          </div>
+          <!-- /.bl-card_body -->
+        </a>
+        <!-- /.bl-card -->
+        <a href="#" class="bl-card">
+          <figure class="bl-card_imgWrapper">
+            <picture>
+              <source type="image/webp" srcset="source/recommended02.webp 1x, source/recommended022x.webp 2x">
+              <img srcset="source/recommended02.jpg 1x, source/recommended022x.jpg 2x" alt="おすすめ２">
+            </picture>
+          </figure>
+          <div class="bl-card_body">
+            <p class="bl-card_ttl">
+              【期間限定】温海蟹をたっぷりと愉しむプラン。
+            </p>
+            <p class="bl-card_txt">
+              温海で水揚げされた蟹は「温海蟹」として知られ、嗜好品として愛されてきました。この宿泊プランでは存分に
+            </p>
+          </div>
+          <!-- /.bl-card_body -->
+        </a>
+        <!-- /.bl-card -->
+        <a href="#" class="bl-card">
+          <figure class="bl-card_imgWrapper">
+            <picture>
+              <source type="image/webp" srcset="source/recommended03.webp 1x, source/recommended032x.webp 2x">
+              <img srcset="source/recommended03.jpg 1x, source/recommended032x.jpg 2x" alt="おすすめ３">
+            </picture>
+          </figure>
+          <div class="bl-card_body">
+            <p class="bl-card_ttl">
+              【平日限定】贅沢美味懐石プラン。海辺の四季旬彩プラン。
+            </p>
+            <p class="bl-card_txt">
+              温海近海で取れた魚を鮮度そのままに舟盛りにしてご提供。生きた味をお楽しみください。
+            </p>
+          </div>
+          <!-- /.bl-card_body -->
+        </a>
+        <!-- /.bl-card -->
+      </div>
+      <!-- /.bl-cardUnit -->
+    </section> 
+
+    <section class="ly-secNotice">
+      <h2 class="el-lv2heading el-beforeIcon el-beforeIcon__logo hp-mb4_6rem">
+        お知らせ
+      </h2>
+
+      <ul class="bl-menu hp-mb4_9rem">
+        <li><a href="#" class="js-active" data-id="info">営業情報</a></li>
+        <li><a href="#" data-id="other">その他</a></li>
+      </ul>
+
+      <div class="bl-miniCardUnit js-active" id="info">
+        <div class="bl-miniCard" data-aos="fade-up">
+          <figure class="bl-miniCard_imgWrapper">
+            <picture>
+              <source type="image/webp" srcset="source/news02.webp 1x, source/news022x.webp 2x">
+              <img srcset="source/news02.jpg 1x, source/news022x.jpg 2x" alt="ニュース２">
+            </picture>
+          </figure>
+          <div class="bl-miniCard_body">
+            <time datatime="2020-12-24" class="bl-miniCard_date">
+              2020.12.24
+            </time>
+            <p class="bl-miniCard_txt">
+              年末最後の営業日のお知らせ
+            </p>
+          </div>
+          <!-- /.bl-miniCard_body -->
+        </div>
+        <!-- /.bl-miniCard -->
+        <div class="bl-miniCard" data-aos="fade-up">
+          <figure class="bl-miniCard_imgWrapper">
+            <picture>
+              <source type="image/webp" srcset="source/news01.webp 1x, source/news012x.webp 2x">
+              <img srcset="source/news01.jpg 1x, source/news012x.jpg 2x" alt="ニュース１">
+            </picture>
+          </figure>
+          <div class="bl-miniCard_body">
+            <time datatime="2020-12-24" class="bl-miniCard_date">
+              2020.12.24
+            </time>
+            <p class="bl-miniCard_txt">
+              年末最後の営業日のお知らせ
+            </p>
+          </div>
+          <!-- /.bl-miniCard_body -->
+        </div>
+        <!-- /.bl-miniCard -->
+        <div class="bl-miniCard" data-aos="fade-up">
+          <figure class="bl-miniCard_imgWrapper">
+            <picture>
+              <source type="image/webp" srcset="source/news02.webp 1x, source/news022x.webp 2x">
+              <img srcset="source/news02.jpg 1x, source/news022x.jpg 2x" alt="ニュース２">
+            </picture>
+          </figure>
+          <div class="bl-miniCard_body">
+            <time datatime="2020-12-24" class="bl-miniCard_date">
+              2020.12.24
+            </time>
+            <p class="bl-miniCard_txt">
+              年末最後の営業日のお知らせ
+            </p>
+          </div>
+          <!-- /.bl-miniCard_body -->
+        </div>
+        <!-- /.bl-miniCard -->
+        <div class="bl-miniCard" data-aos="fade-up">
+          <figure class="bl-miniCard_imgWrapper">
+            <picture>
+              <source type="image/webp" srcset="source/news01.webp 1x, source/news012x.webp 2x">
+              <img srcset="source/news01.jpg 1x, source/news012x.jpg 2x" alt="ニュース１">
+            </picture>
+          </figure>
+          <div class="bl-miniCard_body">
+            <time datatime="2020-12-24" class="bl-miniCard_date">
+              2020.12.24
+            </time>
+            <p class="bl-miniCard_txt">
+              年末最後の営業日は27日になります。
+            </p>
+          </div>
+          <!-- /.bl-miniCard_body -->
+        </div>
+        <!-- /.bl-miniCard -->
+        <div class="bl-miniCard" data-aos="fade-up">
+          <figure class="bl-miniCard_imgWrapper">
+            <picture>
+              <source type="image/webp" srcset="source/news02.webp 1x, source/news022x.webp 2x">
+              <img srcset="source/news02.jpg 1x, source/news022x.jpg 2x" alt="ニュース２">
+            </picture>
+          </figure>
+          <div class="bl-miniCard_body">
+            <time datatime="2020-12-11" class="bl-miniCard_date">
+              2020.12.11
+            </time>
+            <p class="bl-miniCard_txt">
+              12.21は臨時休業とさせていただきますので、よろしくお願いします。
+            </p>
+          </div>
+          <!-- /.bl-miniCard_body -->
+        </div>
+        <!-- /.bl-miniCard -->
+        <div class="bl-miniCard" data-aos="fade-up">
+          <figure class="bl-miniCard_imgWrapper">
+            <picture>
+              <source type="image/webp" srcset="source/news01.webp 1x, source/news012x.webp 2x">
+              <img srcset="source/news01.jpg 1x, source/news012x.jpg 2x" alt="ニュース１">
+            </picture>
+          </figure>
+          <div class="bl-miniCard_body">
+            <time datatime="2020-12-01" class="bl-miniCard_date">
+              2020.12.01
+            </time>
+            <p class="bl-miniCard_txt">
+              和室の改装を行いますため、12.10はお休みさせていただきます。
+            </p>
+          </div>
+          <!-- /.bl-miniCard_body -->
+        </div>
+        <!-- /.bl-miniCard -->
+      </div>
+      <!-- /.bl-miniCardUnit -->
+      <div class="bl-miniCardUnit" id="other">
+        <div class="bl-miniCard" data-aos="fade-up">
+          <figure class="bl-miniCard_imgWrapper">
+            <picture>
+              <source type="image/webp" srcset="source/news01.webp 1x, source/news012x.webp 2x">
+              <img srcset="source/news01.jpg 1x, source/news012x.jpg 2x" alt="ニュース１">
+            </picture>
+          </figure>
+          <div class="bl-miniCard_body">
+            <time datatime="2020-11-24" class="bl-miniCard_date">
+              2020.11.24
+            </time>
+            <p class="bl-miniCard_txt">
+              お料理内容の変更のお知らせ
+            </p>
+          </div>
+          <!-- /.bl-miniCard_body -->
+        </div>
+        <!-- /.bl-miniCard -->
+        <div class="bl-miniCard" data-aos="fade-up">
+          <figure class="bl-miniCard_imgWrapper">
+            <picture>
+              <source type="image/webp" srcset="source/news02.webp 1x, source/news022x.webp 2x">
+              <img srcset="source/news02.jpg 1x, source/news022x.jpg 2x" alt="ニュース２">
+            </picture>
+          </figure>
+          <div class="bl-miniCard_body">
+            <time datatime="2020-11-23" class="bl-miniCard_date">
+              2020.11.23
+            </time>
+            <p class="bl-miniCard_txt">
+              感染症対策についてのお知らせ
+            </p>
+          </div>
+          <!-- /.bl-miniCard_body -->
+        </div>
+        <!-- /.bl-miniCard -->
+        <div class="bl-miniCard" data-aos="fade-up">
+          <figure class="bl-miniCard_imgWrapper">
+            <picture>
+              <source type="image/webp" srcset="source/news01.webp 1x, source/news012x.webp 2x">
+              <img srcset="source/news01.jpg 1x, source/news012x.jpg 2x" alt="ニュース１">
+            </picture>
+          </figure>
+          <div class="bl-miniCard_body">
+            <time datatime="2020-11-22" class="bl-miniCard_date">
+              2020.11.22
+            </time>
+            <p class="bl-miniCard_txt">
+              温泉の利用可能時間の変更のお知らせ
+            </p>
+          </div>
+          <!-- /.bl-miniCard_body -->
+        </div>
+        <!-- /.bl-miniCard -->
+        <div class="bl-miniCard" data-aos="fade-up">
+          <figure class="bl-miniCard_imgWrapper">
+            <picture>
+              <source type="image/webp" srcset="source/news02.webp 1x, source/news022x.webp 2x">
+              <img srcset="source/news02.jpg 1x, source/news022x.jpg 2x" alt="ニュース２">
+            </picture>
+          </figure>
+          <div class="bl-miniCard_body">
+            <time datatime="2020-11-21" class="bl-miniCard_date">
+              2020.11.21
+            </time>
+            <p class="bl-miniCard_txt">
+              改修工事のお知らせ
+            </p>
+          </div>
+          <!-- /.bl-miniCard_body -->
+        </div>
+        <!-- /.bl-miniCard -->
+        <div class="bl-miniCard" data-aos="fade-up">
+          <figure class="bl-miniCard_imgWrapper">
+            <picture>
+              <source type="image/webp" srcset="source/news01.webp 1x, source/news012x.webp 2x">
+              <img srcset="source/news01.jpg 1x, source/news012x.jpg 2x" alt="ニュース１">
+            </picture>
+          </figure>
+          <div class="bl-miniCard_body">
+            <time datatime="2020-11-20" class="bl-miniCard_date">
+              2020.11.20
+            </time>
+            <p class="bl-miniCard_txt">
+              駐車場の利用についてのお知らせ
+            </p>
+          </div>
+          <!-- /.bl-miniCard_body -->
+        </div>
+        <!-- /.bl-miniCard -->
+        <div class="bl-miniCard" data-aos="fade-up">
+          <figure class="bl-miniCard_imgWrapper">
+            <picture>
+              <source type="image/webp" srcset="source/news02.webp 1x, source/news022x.webp 2x">
+              <img srcset="source/news02.jpg 1x, source/news022x.jpg 2x" alt="ニュース２">
+            </picture>
+          </figure>
+          <div class="bl-miniCard_body">
+            <time datatime="2020-12-19" class="bl-miniCard_date">
+              2020.11.19
+            </time>
+            <p class="bl-miniCard_txt">
+              近くに新しくお店ができました。
+            </p>
+          </div>
+          <!-- /.bl-miniCard_body -->
+        </div>
+        <!-- /.bl-miniCard -->
+      </div>
+      <!-- /.bl-miniCardUnit -->
+    </section>
+
+    <section class="ly-secAccess">
+      <h2 class="el-lv2heading el-beforeIcon el-beforeIcon__logo hp-mb10rem">
+        アクセス
+      </h2>
+
+      <div class="un-access hp-mb6_9rem">
+        <figure class="un-access_imgWrapper" data-aos="fade-up">
+          <picture>
+            <source type="image/webp" srcset="source/acess.webp 1x, source/acess2x.webp 2x">
+            <img srcset="source/acess.jpg 1x, source/acess.jpg 2x" alt="雪景色">
+          </picture>
+        </figure>
+        <div class="un-access_body" data-aos="fade-up">
+          <p class="un-access_ttl">
+            住所
+          </p>
+          <p class="un-access_txt">
+            〒000-0000<br>
+            山形県鶴岡市xxxxxxxxxx
+          </p>
+          <p class="un-access_ttl">
+            TEL/FAX
+          </p>
+          <p class="un-access_txt">
+            000-0000-0000/00-0000-0000
+          </p>
+          <p class="un-access_ttl">
+            営業時間
+          </p>
+          <p class="un-access_txt">
+            14:00-23:00
+          </p>
+          <p class="un-access_txt">
+            ＊4名以上のご予約の場合は、最寄り駅の「鶴岡駅」より送迎が可能ですので、ご連絡ください。
+          </p>
+        </div>
+        <!-- /.un-access_body -->
+      </div>
+      <!-- /.un-access -->
+
+      <div class="el-googleMap"  data-aos="fade-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49867.67293605159!2d139.56345489083142!3d38.63210215491136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8c6dbd6c03ae15%3A0x10bc5da99bc816ef!2z44CSOTk5LTcyMDUg5bGx5b2i55yM6ba05bKh5biC5rip5rW3!5e0!3m2!1sja!2sjp!4v1677772888538!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <!-- /.el-googleMap -->
+    </section>
+
+    <section class="ly-secFoot">
+      <div class="bl-foot">
+        <nav>
+          <ul class="bl-foot_menu" data-aos="fade-up">
+            <li><a href="onnsenn.html">温泉</a></li>
+            <li><a href="oryouri.html">お料理</a></li>
+            <li><a href="oheya.html">お部屋</a></li>
+          </ul>
+        </nav>
+
+        <h2 class="bl-foot_imgWrapper" data-aos="fade-up">
+          <a href="index.html">
+            <img src="source/footer-logo.png" alt="ロゴ画像">
+          </a>
+        </h2>
+        <!-- /.bl-foot_imgWrapper -->
+
+        <p class="bl-foot_ttl01" data-aos="fade-up" data-aos-offset="100">
+          <span>〒000-0000</span><span class="bl-foot_ttl01_span">山形県鶴岡市</span>xxxxxxxxxxx
+        </p>
+        <p class="bl-foot_ttl02" data-aos="fade-up" data-aos-offset="100">
+          <span>TEL.000-0000-0000</span>FAX.00-0000-0000
+        </p>
+      </div>
+      <!-- /.bl-foot -->
+    </section>
+  </main>
+  
+  <footer class="ly-footer">
+    <p>
+      Copyright © 石井花壇 All Rights Reserved.
+    </p>
+  </footer>
+
+  <script src="javascript.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 150,
+      duration: 1200,
+      easing: "ease-out",
+      once: true,
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+  <script>
+    flatpickr('#js-datepicker', {
+      locale     : 'ja',
+      dateFormat : 'Y.m.d（D）', 
+      disableMobile: true,
+      mode: "range",
+      minDate: "today",
+      //inline: true,
+    });
+  </script>
+</body>
+</html>

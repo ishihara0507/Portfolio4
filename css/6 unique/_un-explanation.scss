@@ -1,0 +1,61 @@
+.un-explanation {
+  min-height: 47.8rem;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-weight: 500;
+  writing-mode: vertical-rl;
+  margin: 0 auto;
+}
+.un-explanation_ttl {
+  font-size: 2.8rem;
+  letter-spacing: .5em;
+  margin-block-end: clamp(7rem, calc(7rem + (118 - 70) * (100vw - 769px) / (1000 - 769)), 11.8rem);
+  line-height: 6rem;
+  span {
+    display: inline-block;
+    transform: translateY(-3em);
+  }
+}
+.un-explanation_txt {
+  letter-spacing: .35em;
+  margin-block-end: clamp(3rem, calc(3rem + (118 - 30) * (100vw - 669px) / (1000 - 669)), 11.8rem);
+  line-height: 3.5rem;
+  span {
+    text-orientation: upright;
+  }
+}
+.un-explanation_name {
+  font-size: 2.2rem;
+  letter-spacing: .35em;
+  text-align: end;
+  margin-inline-end: 6rem;
+}
+
+@media (max-width: 768px) {
+  .un-explanation {
+    width: 90%;
+    max-width: 50rem;
+    top: 50%;
+    writing-mode: horizontal-tb;
+    box-sizing: content-box;
+    padding: 0 5%;
+    h3 {
+      margin-block-end: 1.5rem;
+    }
+  }
+  .un-explanation_ttl {
+    font-size: 2.4rem;
+    line-height: clamp(3rem, calc(3rem + (60 - 30) * (100vw - 320px) / (768 - 320)), 6rem);
+    span {
+      transform: none;
+    }
+  }
+  .un-explanation_txt {
+    letter-spacing: .15em;
+  }
+  .un-explanation_name {
+    margin-inline-end: 0;
+  }
+}

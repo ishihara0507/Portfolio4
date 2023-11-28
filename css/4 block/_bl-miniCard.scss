@@ -1,0 +1,27 @@
+.bl-miniCard {
+  display: flex;
+  padding: 1.5rem 1rem;
+  background-color: rgba(246, 246, 246, 1);
+}
+.bl-miniCard_imgWrapper {
+  width: 10.3rem;
+  height: 10rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  margin-right: 3rem;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.bl-miniCard_date {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.bl-miniCard_txt {
+  font-weight: 500;
+  line-height: 3.2rem;
+}

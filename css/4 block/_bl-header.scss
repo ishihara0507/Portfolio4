@@ -1,0 +1,204 @@
+.bl-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: background-color 1.5s;
+}
+.bl-header_inner {
+  display: flex;
+  align-items: center;
+}
+.bl-header_imgWrapper {
+  display: block;
+  max-width: 20rem;
+  height: auto;
+  margin-right: 12rem;
+  img {
+    width: 100%;
+  }
+}
+.bl-header_imgWrapperSub {
+  display: none;
+  max-width: 20rem;
+  height: auto;
+  margin-right: 12rem;
+  img {
+    width: 100%;
+  }
+}
+.bl-header_menu {
+  display: flex;
+  li {
+    margin-right: 3rem;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      font-weight: 800;
+      line-height: 4.2rem;
+      color: rgba(255, 255, 255, 1);
+      transition: .25s;
+      &:hover {
+        opacity: .7;
+      }
+      &:focus {
+        opacity: .7;
+      }
+    }
+  }
+}
+.bl-header_btn { //予約ボタン
+  width: 17rem;
+  max-width: 100%;
+  font-weight: 800;
+  line-height: 4.8rem;
+  text-align: center;
+  margin-left: auto;
+  background-color: rgba(151, 143, 16, 1);
+  color: rgba(255, 255, 255, 1);
+  transition: opacity .3s;
+  z-index: 101;
+  &:hover {
+    opacity: .7;
+  }
+  &:focus {
+    opacity: .7;
+  }
+}
+//ハンバーガー
+.bl-header_spBtn {
+  display: none;
+  z-index: 101;
+}
+.bl-header_spMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  width: 60%;
+  min-width: 30rem;
+  height: 100vh;
+  background-color: rgb(255, 248, 240);
+  z-index: 100;
+  padding-top: 6rem;
+  padding-left: 2rem;
+  transition: .3s;
+  li {
+    border-top: 1px solid rgba(0, 0, 0, 1);
+    &:last-child {
+      border-bottom: 1px solid rgba(0, 0, 0, 1);
+    }
+    a {
+      display: block;
+      font-size: 1.8rem;
+      font-weight: 500;
+      padding: 1.5rem 0;
+    }
+  }
+}
+
+//スクロールしたあと
+.bl-header.js-active {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 1);
+  .bl-header_imgWrapper {
+    display: none;
+  }
+  .bl-header_imgWrapperSub {
+    display: block;
+  }
+  .bl-header_menu {
+    li {
+      a {
+        color: rgba(0, 0, 0, 1);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .bl-header {
+    height: 6rem;
+  }
+  .bl-header_imgWrapper {
+    width: 15rem;
+    margin: auto 0 auto;
+  }
+  .bl-header_imgWrapperSub {
+    width: 15rem;
+    margin: auto 0 auto;
+  }
+  .bl-header_menu {
+    display: none;
+  }
+  .bl-header_btn {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+  }
+  .bl-header_spBtn {
+    position: relative;
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 4.8rem;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding-top: 2rem;
+    span {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-block;
+      width: 60%;
+      height: 2px;
+      background-color: rgba(255, 255, 255, 1);
+      transition: .3s;
+      &:nth-child(1) {
+        top: 20%;
+      }
+      &:nth-child(2) {
+        top: 35%;
+      }
+      &:nth-child(3) {
+        top: 50%;
+      }
+    }
+  }
+  .bl-header_spBtn.js-active {
+    color: rgba(0, 0, 0, 1);
+    span {
+      background-color: rgba(0, 0, 0, 1);
+      &:nth-child(1) {
+        top: 35%;
+        left: 20%;
+        transform: rotate(45deg);
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(3) {
+        top: 35%;
+        left: 20%;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .bl-header.js-active {
+    .bl-header_spBtn {
+      color: rgba(0, 0, 0, 1);
+      span {
+        background-color: rgba(0, 0, 0, 1);
+      }
+    }
+  }
+  .bl-header_spMenu.js-active {
+    transform: translateX(0);
+  }
+}

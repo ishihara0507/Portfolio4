@@ -1,0 +1,37 @@
+.hp-mb4_6rem {
+  margin-bottom: 4.6rem;
+}
+.hp-mb4_9rem {
+  margin-bottom: 4.9rem;
+}
+.hp-mb6_6rem {
+  margin-bottom: 6.6rem;
+}
+.hp-mb6_9rem {
+  margin-bottom: 6.9rem;
+}
+.hp-mb10rem {
+  margin-bottom: 10rem;
+}
+.hp-mb12_2rem {
+  margin-bottom: 12.2rem;
+}
+
+
+@media (max-width: 768px) {
+  .hp-mb10rem {
+    margin-bottom: 5rem;
+  }
+  .hp-mb12_2rem {
+    margin-bottom: 8rem;
+  }
+}
+
+.hp-none420px {
+  display: block;
+}
+@media (max-width: 420px) {
+  .hp-none420px {
+    display: none;
+  }
+}

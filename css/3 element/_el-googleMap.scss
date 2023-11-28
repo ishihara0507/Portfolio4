@@ -1,0 +1,15 @@
+.el-googleMap {
+  position: relative;
+  max-width: 79.2rem;
+  aspect-ratio: 792/592;
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: content-box !important;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

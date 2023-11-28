@@ -1,0 +1,23 @@
+.bl-cardUnit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bl-cardUnit.bl-cardUnit__col3 {
+  .bl-card {
+    width: calc((331/1180) * 100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .bl-cardUnit.bl-cardUnit__col3 {
+    flex-direction: column;
+    .bl-card {
+      width: 100%;
+      margin-bottom: 6rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

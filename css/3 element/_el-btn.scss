@@ -1,0 +1,41 @@
+.el-btn {
+  display: inline-block;
+  width: 20rem;
+  position: relative;
+  font-weight: 500;
+  line-height: 3.2rem;
+  background: rgba(255, 255, 255, 1);
+  border: solid 1px rgba(112, 112, 112, 1);
+  padding: 2.5rem;
+  transition: .3s;
+  &::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #000;
+    z-index: 0;
+    transition: all .4s ease-out;
+  }
+  span{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #000;
+    z-index: 2;
+  }
+  &:hover{
+    span{
+      color: #fff;
+    }
+    &::before{
+      width: 100%;
+    }
+  }
+}

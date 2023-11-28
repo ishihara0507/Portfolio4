@@ -1,0 +1,24 @@
+.bl-menu {
+  display: flex;
+  justify-content: center;
+  li {
+    margin-right: 5.3rem;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: .5s;
+      &:hover {
+        border-bottom: 1px solid rgba(0, 0, 0, 1);
+      }
+      &:focus {
+        border-bottom: 1px solid rgba(0, 0, 0, 1);
+      }
+    }
+    a.js-active {
+      border-bottom: 1px solid rgba(0, 0, 0, 1);
+    }
+  }
+}
